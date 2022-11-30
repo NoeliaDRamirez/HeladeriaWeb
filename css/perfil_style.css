@@ -1,0 +1,134 @@
+body {
+    padding: 0px;
+    margin: 0;
+    background-color: fff;
+   /* font-family: -aSpple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    
+   */
+   font-family: sans-serif;
+}
+
+/*a, a:visited{
+color: #0000EE;
+}
+a:hover{
+color: #EE0000;
+}*/
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    /*letter-spacing: 8px;*/
+    color: #0082e6;
+	font-size: 38px;
+}
+
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 70px;
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /*border: none;*/
+	outline: none;
+	padding: 10px;
+    border-radius: 20px;
+}
+
+button {
+    background-color:#0082e6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+	cursor: pointer;
+    width: 100%;
+    border: none;
+    
+}
+.editar{
+    background-color:#0082e6;
+    color:#ffffff;
+    padding:10px;
+    display:inline-block;
+    margin-bottom:5px;
+    text-decoration: none;
+	/*border-radius: 20px;*/
+    float: right;
+    
+}
+.versuarios{
+        background-color:#0082e6;
+        color:#ffffff;
+        padding:10px;
+        display:inline-block;
+        margin-bottom:0px;
+        text-decoration: none;
+        /*border-radius: 20px;*/
+        float: right;
+    }
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.Regbtn {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #c5c2c2;
+}
+
+
+.error_message {
+    color: red;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success_message {
+    color: green;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    padding: 16px;
+}
+
+.listaU{
+    
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .Regbtn {
+        width: 100%;
+    }
+}

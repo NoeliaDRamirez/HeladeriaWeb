@@ -1,0 +1,384 @@
+ *{ margin: 0; padding: 0;}
+body{
+    font-family:sans-serif;
+	
+}
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#395eb4;
+	margin-bottom:20px;
+}
+.wrapper {
+	width:100%; /* Establecemos que el ancho sera del 90% de toda la pagina*/
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+}
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	line-height:200px;
+	float:left;
+	
+}
+header nav {
+	float:right;
+	line-height:200px;
+	
+}
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+header nav a:hover {
+	background:#0082e6;
+	border-radius:50px;
+}
+.header2 {
+	position: fixed;
+	height:100px;
+}
+
+.header2 .logo {
+	line-height:100px;
+	font-size:30px;
+}
+
+.header2 nav {
+	line-height:100px;
+}
+h6{
+	margin:auto;
+	padding:0px;
+	font-size:10px;
+	font-weight: 100;
+	text-align: center;
+	color:#f2f2f2;
+	line-height:20px;
+	float:none;
+	background:#0082e6;
+}
+
+/* ----------------------------------------------*/
+.formBusqueda{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+	
+}
+.formBusqueda .btnBuscar{
+	background: #0082e6;
+	color: #FFF;
+	padding: 0 20px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+}
+/*************/
+h2{
+	margin:0px;
+	padding:0px;
+}
+
+.container{
+    padding:8px;
+    width:90%;
+    border:1px solid #fcf8fa;
+}
+
+.table{
+    padding:5px;
+    border-collapse: collapse;
+    width:100%;
+}
+
+.table th{
+    background-color: #84f0ba;
+    padding:5px;
+    border:1px solid #e0e0e0;
+	text-align: left;
+}
+.table td{
+    border:1px solid #f8f4f7;
+    padding:5px;
+	
+}
+
+.add-new{
+    background-color:#0082e6;
+    color:#ffffff;
+    padding:10px;
+    display:inline-block;
+    margin-bottom:5px;
+    text-decoration: none;
+	/*border-radius: 20px;*/
+}
+
+.error-msg{
+	background-color:#ff0000;
+	color:#ffffff;
+	padding:5px;
+	margin-bottom:2px;
+}
+
+.success-msg{
+	background-color:#024b21;
+	color:#ffffff;
+	padding:5px;
+}
+
+.form-group{
+	margin:10px 0px;
+	padding:5px 0px;
+	width:350px;
+}
+
+.form-group label{
+	width:150px;
+	display:block;
+	margin-bottom:2px;
+}
+
+.form-group input{
+	height:30px;
+	border-radius:0px;
+	width:350px;
+}
+
+.form-group textarea{
+	width:350px;
+	height:100px;
+	border-radius:0px;
+}
+
+.form-group select{
+	width:130px;
+	height:30px;
+	border-radius:0px;
+}
+
+.form-group button{
+	border-radius:0px;
+	background-color:#0082e6;
+	padding:10px;
+	color:#ffffff;
+	cursor:pointer;
+	/*border-radius: 20px;*/
+}
+
+.form-group button:hover{
+	background-color:#0082e6;
+	cursor:pointer;
+}
+
+.back-link{
+	height:30px;
+	text-decoration:none;
+	color:red;
+	
+}
+/*-----------------------------------*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   	margin: 100px 0;
+
+}
+.bienvenida{
+	color: #0082e6;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 220px;
+}
+.col-1 h2{
+    font-size: 54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px
+}
+.col-1 p{
+    font-size: 16px;
+    color: #141414;
+    font-weight: 100;
+}
+
+.col-1 h4{
+   margin: 30px 0;
+    font-size: 15px;
+}
+
+.col-1::after{/*linea lateral*/
+    content: '';
+    width: 10px;
+    height: 63%;
+    background: linear-gradient(#0082e6, #44a7f3);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+	margin-right: 330px;
+}
+.col-2 .helado{
+    width: 80%;
+}
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#0082e6, #44a7f3);
+    border-radius: 20px 0 0 20px;
+    height: 80%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);/*llevo la caja a la derecha*/
+}
+/*------- login ----*/
+.bodyLog {
+	background: #0082e6;
+	font-family: "Poppins";
+  }
+  .containerLog {
+	width: 500px;
+	padding: 100px;
+	border-radius: 15px;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	margin: auto;
+	margin-top: 50px;
+  }
+  .Log {
+	color: #0082e6;
+	font-size: 38px;
+  }
+  .formLog {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+  }
+  .form__div {
+	width: 100%;
+	border: solid 1px rgb(145, 145, 145);
+	padding: 10px 25px;
+	border-radius: 20px;
+  }
+  .campo {
+	border: none;
+	outline: none;
+	padding: 10px;
+  }
+  span {
+	color: rgb(145, 145, 145);
+  }
+  .buttonLog {
+	width: 100%;
+	padding: 15px 15px;
+	background: #0082e6;
+	border: none;
+	font-size: 16px;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+  }
+  .buttonLog:hover {
+	background: #619ebd;
+  }
+  .bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+  }
+  .buttonReg {
+	width: 100%;
+	padding: 15px 15px;
+	background: #a5acb1;
+	border: none;
+	font-size: 16px;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+  }
+  .buttonReg:hover {
+	background: #619ebd;
+  }
+/*--------------------*/
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:100px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height:50px;
+	}
+	/*Responsive*/
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        
+    }
+    .col-2 .helado{
+        width: 77%;
+    }
+    .color-box{
+        transform: : translateX(75px);
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-1 h2{
+        font-size: 35px;
+    }
+    .col-1 h3{
+        font-size: 15px;
+    }
+
+}
