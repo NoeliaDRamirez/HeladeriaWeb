@@ -56,13 +56,13 @@
 			$password 	= filter_var(trim($_POST['password']),FILTER_SANITIZE_STRING);
 			//$password 	= password_hash($_POST['password'], PASSWORD_DEFAULT);
 			//$rol_id 	= filter_var(trim($_POST['rol_id']),FILTER_SANITIZE_STRING);
-			//$hash = password_hash($password, PASSWORD_DEFAULT);
+			$hash = password_hash($password, PASSWORD_DEFAULT);
 										
 			//preparo la consulta con los valores enviados desde el form
 			$sql = "UPDATE usuarios SET 
 								usuario = '".$usuario."', 
 								email='".$email."', 
-								password='".$password."'
+								password='".$hash."'
 
 					WHERE id = ".$id;
 			

@@ -54,6 +54,7 @@
 			$email 	= filter_var(trim($_POST['email']),FILTER_SANITIZE_STRING);
 			//$password 	= password_hash($_POST['password'], PASSWORD_DEFAULT);
 			$password 	= filter_var(trim($_POST['password']),FILTER_SANITIZE_STRING);//no hay que encriptarla
+			$hash = password_hash($password, PASSWORD_DEFAULT);
 			$rol_id 	= filter_var(trim($_POST['rol_id']),FILTER_SANITIZE_STRING);
 			
 			//preparo la fecha de cuando actualizo
@@ -63,7 +64,7 @@
 			$sql = "UPDATE usuarios SET 
 								usuario = '".$usuario."', 
 								email='".$email."', 
-								password='".$password."', 
+								password='".$hash."', 
 								rol_id='".$rol_id."'
 
 					WHERE id = ".$id;
